@@ -18,7 +18,7 @@
             alert ("Empatou");
         }else{
             var sorteio = parseInt(Math.random()*2);
-            if (sorteio === 0 && n1 < n2 || sorteio === 1 && n1 > n2){
+            if ((sorteio === 0 && n1 < n2) || (sorteio === 1 && n1 > n2)){
                 alert("Ganhou o n1");
             }else{
                 alert ("Ganhou o n2");
