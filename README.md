@@ -1,2 +1,2 @@
-# curso de JS e CSS
- curso de javascript e CSS
+# Curso de JS e CSS
+ * curso de **javascript** e *CSS*
