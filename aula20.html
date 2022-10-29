@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logica de programação js</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Lógica de programação js</h1>
+        <button onclick="mostrartabuada()"> Criar tabuada</button>
+        <button onclick="limpartabuada()"> Limpar tabuada</button>
+        <div id="output"></div>
+
+        <script>
+            function mostrartabuada(){
+                var n = prompt ("Digite um número: ");
+                n = parseFloat (n);
+                limpartabuada();
+                var indice = 1;
+                while (indice <= 1000){
+                    mensagem += n + ' x ' + indice + ' = ' + (n*indice) + '<br>';
+                    indice ++; 
+                }
+                output.innerHTML = mensagem;
+            }
+
+            function limpartabuada(){
+                mensagem='';
+                output.innerHTML = mensagem;
+            }
+            var output = document.querySelector('#output');
+            var mensagem = '';
+           
+        </script>
+
+    </body>
+
+</html>
