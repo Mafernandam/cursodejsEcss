@@ -6,14 +6,14 @@
     </head>
     <body>
         <h1>Lógica de programação js</h1>
+        <button onclick="mostrartabuada()"> Criar tabuada</button>
+        <button onclick="limpartabuada()"> Limpar tabuada</button>
         <div id="output"></div>
         <script>
-            var output = document.querySelector('#output');
-            var mensagem = '';
-            for (var i = 0; i < 1001 ; i++){
-                mensagem += 'i: '+ i + '<br>';
+            function mostrartabuada(){
+                alert('mostrartabuada chamada');
             }
-            output.innerHTML = mensagem;
+
         </script>
     </body>
 
