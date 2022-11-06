@@ -24,16 +24,30 @@
 
             function iniciarcalculo(simbolo){
                 var n1 = document.querySelector('#output').textContent;
-
+                n1 = parseFloat(n1);
                 var n2 = prompt("Digite outro numero: ");
                 n2 = parseFloat(n2);
 
+                try{
+                    var msg =calcular(simbolo, n1, n2);
+                }catch(e){
+                    alert(e);
+                    return;
+                }
                 var msg = calcular(simbolo, n1, n2);
 
                 escreve(msg);
             }
 
             function calcular(simbolo, n1, n2){
+                if (simbolo !== '+' && simbolo !== '-' && simbolo !== '*' && simbolo !== '/'){
+                    throw new Error("digite um simbolo valido");
+                 }
+                if (isNaN(n1) || isNaN(n2)){
+                    alert("apenas números")
+                    return 0;
+                }
+
                 var numerocalculado = null;
                 switch (simbolo){
                     case '+':
